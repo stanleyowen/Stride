@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/SwiftUI-SwiftData-0A84FF" alt="SwiftUI · SwiftData" />
   <img src="https://img.shields.io/badge/HealthKit-MapKit-FF2D55" alt="HealthKit · MapKit" />
   <img src="https://img.shields.io/badge/Swift%20Charts-✓-FF8A00" alt="Swift Charts" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue" alt="License: GPL v3" /></a>
 </p>
 
 <img src="docs/screenshots/hero.png" alt="Stride screens: activity analysis, home feed, activity overview, training and records" width="100%" />
@@ -164,3 +165,11 @@ Stride/
 ## 🔒 Privacy
 
 Stride is a single-user app with no backend, analytics or third-party SDKs. It only **reads** from Apple Health, and deleting an activity in Stride never changes your Health data. Data leaves the device only when you choose to export it.
+
+## 📄 License
+
+Copyright © 2026 Stanley Owen
+
+Stride is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License](LICENSE) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+It is distributed in the hope that it will be useful, but **without any warranty**, without even the implied warranty of merchantability or fitness for a particular purpose. See the [LICENSE](LICENSE) file for details.
