@@ -97,15 +97,15 @@ Every workout opens on a full-bleed route map and four tabs that share one selec
 
 All of the analysis lives in **`StrideCore`**, a pure Swift package with unit tests that runs on macOS without a simulator.
 
-| Metric | Method |
-| --- | --- |
-| Grade-adjusted pace | Minetti et al. metabolic cost of running on gradients |
-| Relative Effort | Heart-rate TRIMP using heart-rate reserve (Karvonen) |
+| Metric                   | Method                                                        |
+| ------------------------ | ------------------------------------------------------------- |
+| Grade-adjusted pace      | Minetti et al. metabolic cost of running on gradients         |
+| Relative Effort          | Heart-rate TRIMP using heart-rate reserve (Karvonen)          |
 | Fitness / Fatigue / Form | Exponentially weighted CTL (42 d), ATL (7 d), TSB = CTL − ATL |
-| Aerobic decoupling | Pace:HR drift, first half vs. second half |
-| Race prediction | Riegel endurance model, cross-checked with VO₂max / VDOT |
-| Segments & route history | Route signatures and segment matching on GPS tracks |
-| Best efforts | Fastest rolling window for each standard distance |
+| Aerobic decoupling       | Pace:HR drift, first half vs. second half                     |
+| Race prediction          | Riegel endurance model, cross-checked with VO₂max / VDOT      |
+| Segments & route history | Route signatures and segment matching on GPS tracks           |
+| Best efforts             | Fastest rolling window for each standard distance             |
 
 ## 🚀 Getting started
 
@@ -125,12 +125,12 @@ open Stride.xcodeproj
 
 DEBUG builds accept these arguments, which are handy for screenshots and UI work:
 
-| Argument | Effect |
-| --- | --- |
-| `-demoData` | Seed demo activities and skip onboarding |
-| `-tab training\|explore\|records\|you` | Start on a specific tab |
-| `-openActivity N` | Push the Nth activity in the feed |
-| `-detailTab overview\|analysis\|splits\|efforts` | Choose the activity tab to open |
+| Argument                                         | Effect                                   |
+| ------------------------------------------------ | ---------------------------------------- |
+| `-demoData`                                      | Seed demo activities and skip onboarding |
+| `-tab training\|explore\|records\|you`           | Start on a specific tab                  |
+| `-openActivity N`                                | Push the Nth activity in the feed        |
+| `-detailTab overview\|analysis\|splits\|efforts` | Choose the activity tab to open          |
 
 ```sh
 xcrun simctl launch booted com.stanleyowen.stride -demoData -openActivity 1 -detailTab analysis
@@ -164,9 +164,3 @@ Stride/
 ## 🔒 Privacy
 
 Stride is a single-user app with no backend, analytics or third-party SDKs. It only **reads** from Apple Health, and deleting an activity in Stride never changes your Health data. Data leaves the device only when you choose to export it.
-
----
-
-<div align="center">
-  <sub>Built with SwiftUI, Swift Charts and a lot of easy miles. 🧡</sub>
-</div>
